@@ -1,0 +1,6 @@
+{
+  "name": "MENTORA — Intelligent Mentorship Operations Platform",
+  "description": "Intelligent mentorship operations and student allocation platform. Automated multi-factor compatibility scoring, capacity balancing, and network matching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  --font-heading: 'Manrope', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Theme tokens: Bloom & Knowledge */
+  --bg-main: #FFF9F0;       /* warm ivory */
+  --bg-card: #FFFFFF;       /* crisp white */
+  --bg-blush: #F9E3D9;      /* soft blush */
+  --bg-pale-blue: #E5EDFC;  /* pale blue */
+  --text-main: #202C45;     /* deep navy */
+  --text-muted: #64748B;    /* refined slate */
+  --accent-coral: #F07857;  /* vibrant coral */
+  --accent-cobalt: #5478D4; /* rich cobalt blue */
+  --accent-yellow: #F3C969; /* sunshine yellow */
+  --accent-teal: #63AFA3;   /* fresh teal */
+  --border-warm: #EAE2D8;   /* warm neutral border */
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #FFF9F0;
+  color: #202C45;
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.015em;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom warm scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF9F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EAE2D8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F07857;
+}
+
+/* Vibrant Coral text selection */
+::selection {
+  background-color: rgba(240, 120, 87, 0.2);
+  color: #202C45;
+}
+
+/* Subtle modern warm dotted texture */
+.bg-warm-mesh {
+  background-color: #FFF9F0;
+  background-image: radial-gradient(#EAE2D8 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Modern card elevation */
+.card-bloom {
+  background-color: #FFFFFF;
+  border: 1px solid #EAE2D8;
+  box-shadow: 0 1px 3px rgba(32, 44, 69, 0.04), 0 6px 16px rgba(32, 44, 69, 0.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-bloom:hover {
+  border-color: #D8CEBF;
+  box-shadow: 0 4px 12px rgba(32, 44, 69, 0.06);
+}
+
+/* Print styling */
+@media print {
+  aside, header, nav, .no-print {
+    display: none !important;
+  }
+  body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
